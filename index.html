@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Swami Atma Jagran | Home - The Digital Monk</title>
+    <title>Swami Atma Jagran | The Digital Monk</title>
     <style>
         :root {
             --bg-color: #ffffff;
@@ -193,6 +193,7 @@
             from { transform: rotate(0deg); }
             to { transform: rotate(360deg); }
         }
+
         .book-thumbnail {
             width: 100%;
             height: 190px;
@@ -244,6 +245,7 @@
             letter-spacing: 1px;
             text-transform: uppercase;
         }
+
         .products-grid {
             display: grid;
             grid-template-columns: 1fr 1fr;
@@ -316,15 +318,19 @@
             background: #ffffff;
             color: #27ae60;
         }
-        .whatsapp-btn {
+        .whatsapp-send-btn {
             background: #25d366 !important;
             border-color: #25d366 !important;
             color: #ffffff !important;
             text-decoration: none;
             display: none;
-            margin-top: 10px;
+            margin-top: 12px;
+            text-align: center;
+            font-weight: 700;
+            padding: 12px;
+            border-radius: 8px;
         }
-        .whatsapp-btn:hover {
+        .whatsapp-send-btn:hover {
             background: #1ebe5d !important;
         }
         .section-title {
@@ -386,6 +392,7 @@
             font-size: 0.95rem;
             margin: 5px 0;
         }
+
         .modal-overlay {
             position: fixed;
             top: 0;
@@ -445,6 +452,7 @@
         .row-group > div {
             flex: 1;
         }
+        
         .admin-table {
             width: 100%;
             border-collapse: collapse;
@@ -463,6 +471,7 @@
     </style>
 </head>
 <body>
+
     <header>
         <div class="header-left">
             <div class="brand-logo">
@@ -478,6 +487,7 @@
             <button onclick="openAdminModal()" class="admin-nav-btn">🔒 जिज्ञासु पटल</button>
         </div>
     </header>
+
     <div class="container">
         <div class="hero-section">
             <span class="hero-tag">Know the secrets of your stars</span>
@@ -491,31 +501,35 @@
                 </div>
             </div>
         </div>
+
         <div class="products-grid" id="store">
+            <!-- Product 1: Free Swarnima Janm Patrika -->
             <div class="product-box">
                 <div>
                     <div class="book-thumbnail">
-                        <div class="book-title-main">आपकी AI जन्मपत्रिका</div>
-                        <div class="book-title-sub">Basic Vedic & Planetary Guide</div>
-                        <div class="book-badge">3 Pages Lead Report</div>
+                        <div class="book-title-main">स्वर्णिम जन्मपत्रिका</div>
+                        <div class="book-title-sub">Free Vedic & Planetary Guide</div>
+                        <div class="book-badge">Free Report Edition</div>
                     </div>
-                    <h3 style="color: var(--primary-dark); margin-bottom: 8px;">AI Free Janm Patrika</h3>
+                    <h3 style="color: var(--primary-dark); margin-bottom: 8px;">Swarnima Janm Patrika (Free)</h3>
                     <p style="color: var(--text-muted); font-size: 0.9rem;">Basic planetary positions & introductory Janm Kundli report to start your journey.</p>
                     <div class="price-display">
                         <span class="free-price">₹0</span>
                     </div>
-                    <p style="color: #27ae60; font-weight: 600; font-size: 0.85rem;">⚡ Instant Lead Magnet Access</p>
+                    <p style="color: #27ae60; font-weight: 600; font-size: 0.85rem;">⚡ Free Lead Report</p>
                 </div>
-                <button onclick="openCheckoutModal('Free Janm Patrika', 0)" class="buy-btn free-btn">GET FREE REPORT →</button>
+                <button onclick="openCheckoutModal('Swarnima Janm Patrika (Free)', 0)" class="buy-btn free-btn">GET FREE REPORT →</button>
             </div>
+
+            <!-- Product 2: Divya Bhagye Sutra (Master Karmic Blueprint) -->
             <div class="product-box" style="border-color: var(--primary-dark);">
                 <div>
                     <div class="book-thumbnail">
-                        <div class="book-title-main">Master Karmic Blueprint</div>
+                        <div class="book-title-main">दिव्य भाग्य सूत्र</div>
                         <div class="book-title-sub">D1, D9 & Chandra Deep Analysis</div>
                         <div class="book-badge">Complete Vedic Book Edition</div>
                     </div>
-                    <h3 style="color: var(--primary-dark); margin-bottom: 8px;">Master Karmic Blueprint</h3>
+                    <h3 style="color: var(--primary-dark); margin-bottom: 8px;">Divya Bhagye Sutra</h3>
                     <p style="color: var(--text-muted); font-size: 0.9rem;">D1, D9, Chandra Charts + 10-Page Detailed Report & Secret AI Prompts.</p>
                     <div class="price-display">
                         <span class="old-price">₹2,999/-</span>
@@ -523,9 +537,10 @@
                     </div>
                     <p style="color: var(--accent-gold); font-weight: 600; font-size: 0.85rem;">⚡ Complete Deep-Dive Analysis</p>
                 </div>
-                <button onclick="openCheckoutModal('Master Karmic Blueprint', 999)" class="buy-btn">BUY NOW →</button>
+                <button onclick="openCheckoutModal('Divya Bhagye Sutra', 999)" class="buy-btn">BUY NOW (₹999) →</button>
             </div>
         </div>
+
         <div>
             <h3 class="section-title">क्यों हमने 250 पेज के बजाय सिर्फ 10 पेज चुने?</h3>
             <div class="content-block">
@@ -533,32 +548,14 @@
                 <p style="margin-top: 15px;">हम आपको <span class="highlight">बोझ नहीं, क्लैरिटी देना चाहते हैं</span>। हम देंगे आपको सीधा रिजल्ट, सीधा कंक्लूजन।</p>
             </div>
         </div>
-        <div>
-            <h3 class="section-title">Everything You Need, In One Report</h3>
-            <div class="features-grid">
-                <div class="feature-card">
-                    <h4>Marriage & Relationships</h4>
-                    <p>D9 Navamsa analysis for deep compatibility and alignment.</p>
-                </div>
-                <div class="feature-card">
-                    <h4>Career & Business</h4>
-                    <p>Direct planetary positioning to decode your true professional calling.</p>
-                </div>
-                <div class="feature-card">
-                    <h4>Finance & Wealth</h4>
-                    <p>Karmic financial blocks and growth timing without fear-mongering.</p>
-                </div>
-                <div class="feature-card">
-                    <h4>Secret AI Prompts</h4>
-                    <p>Master prompts for D1, D9, and Chandra charts to unlock answers anytime.</p>
-                </div>
-            </div>
-        </div>
+
         <div class="about-monk">
             <h3 style="color: var(--primary-dark); margin-bottom: 15px; font-size: 1.5rem;">Who is Swami Atma Jagran?</h3>
             <p style="color: var(--text-muted);">Swami Atma Jagran is <strong>"The Digital Monk"—the Zorba the Buddha sanyasi</strong> who brings absolute clarity to your life right into your hands. Blending deep spiritual intuition with modern logical analysis, he bridges ancient Vedic wisdom with cutting-edge AI. No fake remedies, no fear-tactics—just pure truth derived from your D1, D9 Navamsa, and Moon charts.</p>
         </div>
     </div>
+
+    <!-- Step 1: Birth Details Modal -->
     <div id="checkoutModal" class="modal-overlay">
         <div class="modal-box">
             <span class="modal-close" onclick="closeCheckoutModal()">&times;</span>
@@ -568,7 +565,7 @@
             <form id="orderForm" onsubmit="proceedToPayment(event)">
                 <div class="form-group">
                     <label>Full Name</label>
-                    <input type="text" id="userName" placeholder="e.g. Jatin Nagar" required>
+                    <input type="text" id="userName" placeholder="e.g. Rahul Sharma" required>
                 </div>
                 <div class="form-group">
                     <label>Date of Birth</label>
@@ -592,13 +589,15 @@
                     <input type="text" id="userPob" placeholder="e.g. Bhopal, MP" required>
                 </div>
                 <div class="form-group">
-                    <label>WhatsApp Number (For Report Delivery)</label>
+                    <label>WhatsApp Number</label>
                     <input type="tel" id="userPhone" placeholder="7000534788" maxlength="10" required>
                 </div>
-                <button type="submit" id="payButton" class="buy-btn" style="max-width: 100%; margin-top: 10px;">Proceed to Payment →</button>
+                <button type="submit" id="payButton" class="buy-btn" style="max-width: 100%; margin-top: 10px;">Proceed →</button>
             </form>
         </div>
     </div>
+
+    <!-- Step 2: QR & UPI Direct Payment Modal -->
     <div id="qrPaymentModal" class="modal-overlay">
         <div class="modal-box" style="text-align: center;">
             <span class="modal-close" onclick="closeQrModal()">&times;</span>
@@ -610,28 +609,36 @@
                 <img src="WhatsApp Image 2026-07-31 at 22.05.25.jpeg" alt="Swami Atma Jagran QR" style="width: 200px; height: 200px; object-fit: contain; border-radius: 6px;">
                 <div style="color: #c5a059; font-size: 0.75rem; margin-top: 5px; font-weight: 600;">UPI: 7000534788-3@ybl</div>
             </div>
-            <div style="margin-bottom: 15px;">
-                <a id="upiAppButton" href="#" class="buy-btn" style="background: #2575fc; border-color: #2575fc; text-decoration: none; display: block; margin-bottom: 8px;">📱 Pay Direct via PhonePe / Paytm App</a>
+
+            <!-- Direct UPI App Intent Button -->
+            <div style="margin-bottom: 12px;">
+                <a id="upiAppButton" href="#" class="buy-btn" style="background: #2575fc; border-color: #2575fc; text-decoration: none; display: block;">📱 Pay Direct via PhonePe / Paytm App</a>
             </div>
-            <p style="font-size: 0.85rem; color: var(--text-muted); line-height: 1.5; margin-bottom: 15px;">
-                पेमेंट पूरा करने के बाद ही नीचे <strong>"I Have Paid"</strong> बटन पर क्लिक करें।
+
+            <p style="font-size: 0.85rem; color: var(--text-muted); line-height: 1.5; margin-bottom: 12px;">
+                पेमेंट पूरा करने के बाद नीचे <strong>"I Have Paid"</strong> बटन पर क्लिक करें।
             </p>
+
             <button onclick="confirmOrderSuccess()" class="buy-btn free-btn" style="max-width: 100%;">I Have Paid — Complete Order ✓</button>
             
-            <a id="whatsappUpdateBtn" href="#" target="_blank" class="buy-btn whatsapp-btn">💬 WhatsApp पर अपडेट पाएं</a>
+            <!-- WhatsApp Detail Send Button for Owner (Appears after payment confirmation) -->
+            <a id="whatsappDetailBtn" href="#" target="_blank" class="whatsapp-send-btn">📲 स्वामी जी को WhatsApp पर डिटेल्स भेजें</a>
         </div>
     </div>
+
+    <!-- Consultation Page Modal -->
     <div id="consultationModal" class="modal-overlay">
         <div class="modal-box" style="text-align: center;">
             <span class="modal-close" onclick="closeConsultationModal()">&times;</span>
-            <h3 style="color: var(--primary-dark); font-size: 1.6rem; margin-bottom: 10px;">🌟 Swami Atma Jagran | 20+ Years Legacy</h3>
-            <p style="font-size: 1rem; color: var(--text-muted); margin-bottom: 20px;">Private, confidential guidance from trusted experts. Predict your future with intuition, not just calculations.</p>
+            <h3 style="color: var(--primary-dark); font-size: 1.5rem; margin-bottom: 10px;">🌟 Swami Atma Jagran | Consultation</h3>
+            <p style="font-size: 0.95rem; color: var(--text-muted); margin-bottom: 20px;">Private, confidential guidance directly from Swami Ji.</p>
             
-            <div style="background: #fdf8f8; padding: 20px; border-radius: 8px; border: 1px solid var(--border-color); margin-bottom: 20px; text-align: left;">
-                <p style="font-weight: 700; color: var(--primary-dark); font-size: 1.05rem; margin-bottom: 8px;">📅 Book Your Schedule Today:</p>
-                <p style="font-size: 0.95rem; color: #27ae60; font-weight: 700; margin-bottom: 5px;">• 1st Consultation: 100% FREE!</p>
-                <p style="font-size: 0.95rem; color: var(--text-muted); font-weight: 600;">• Subsequent Consultations / Deep Sessions: ₹1,999/- only</p>
+            <div style="background: #fdf8f8; padding: 15px; border-radius: 8px; border: 1px solid var(--border-color); margin-bottom: 20px; text-align: left;">
+                <p style="font-weight: 700; color: var(--primary-dark); font-size: 1rem; margin-bottom: 5px;">📅 Booking Details:</p>
+                <p style="font-size: 0.9rem; color: #27ae60; font-weight: 700; margin-bottom: 3px;">• 1st Consultation: 100% FREE!</p>
+                <p style="font-size: 0.9rem; color: var(--text-muted); font-weight: 600;">• Subsequent Sessions: ₹1,999/-</p>
             </div>
+
             <form onsubmit="bookConsultationSchedule(event)" style="text-align: left;">
                 <div class="form-group">
                     <label>Your Name</label>
@@ -641,25 +648,30 @@
                     <label>WhatsApp Number</label>
                     <input type="tel" id="consultPhone" placeholder="7000534788" maxlength="10" required>
                 </div>
-                <button type="submit" class="buy-btn" style="max-width: 100%; margin-top: 10px;">Book Your Schedule Now →</button>
+                <button type="submit" class="buy-btn" style="max-width: 100%; margin-top: 10px;">Book Consultation Now →</button>
             </form>
+
+            <!-- WhatsApp Detail Send Button for Consultation Owner -->
+            <a id="consultWhatsappDetailBtn" href="#" target="_blank" class="whatsapp-send-btn">📲 स्वामी जी को WhatsApp पर कंसल्टेशन भेजें</a>
         </div>
     </div>
+
+    <!-- Admin Dashboard Modal -->
     <div id="adminModal" class="modal-overlay">
         <div class="modal-box" style="max-width: 750px;">
             <span class="modal-close" onclick="closeAdminModal()">&times;</span>
             <h3 style="color: var(--primary-dark); margin-bottom: 5px; font-size: 1.4rem;">🔒 जिज्ञासु पटल (Admin Dashboard)</h3>
-            <p style="font-size: 0.9rem; color: var(--text-muted); margin-bottom: 15px;">Real-time customer lead database, order tracking, and status assignment.</p>
+            <p style="font-size: 0.9rem; color: var(--text-muted); margin-bottom: 15px;">Real-time customer lead database & order tracking.</p>
             
             <div style="overflow-x: auto;">
                 <table class="admin-table">
                     <thead>
                         <tr>
                             <th>Order ID</th>
-                            <th>Name & WhatsApp</th>
-                            <th>Service</th>
-                            <th>DOB / Time / Place</th>
-                            <th>Tracking Status</th>
+                            <th>Name & Phone</th>
+                            <th>Service / Product</th>
+                            <th>Birth Details</th>
+                            <th>Status</th>
                         </tr>
                     </thead>
                     <tbody id="adminTableBody">
@@ -671,19 +683,23 @@
             </div>
         </div>
     </div>
+
     <footer>
         <p><strong>Swami Atma Jagran — The Digital Monk</strong></p>
-        <p>किसी भी समस्या या सहायता के लिए संपर्क करें:</p>
-        <p>📧 Email: support@swamiatmajagran.com | 📱 WhatsApp / Call: +91 7000534788</p>
-        <p style="margin-top: 20px; font-size: 0.85rem; color: #d4b584;">धन्यवाद! आपका भविष्य आपके अपने हाथों में है।</p>
+        <p>संपर्क करें:</p>
+        <p>📱 WhatsApp / Call: +91 7000534788</p>
+        <p style="margin-top: 15px; font-size: 0.85rem; color: #d4b584;">धन्यवाद! आपका भविष्य आपके अपने हाथों में है।</p>
     </footer>
+
     <script>
         let selectedProduct = '';
         let productPrice = 0;
         let ordersList = [];
         let currentTempOrder = null;
+
         const MERCHANT_UPI = "7000534788-3@ybl"; 
         const MERCHANT_NAME = "Swami Atma Jagran";
+        const OWNER_WHATSAPP = "917000534788"; // आपका ऑफिशियल नंबर जिस पर डिटेल्स आएगी
 
         function openCheckoutModal(prodName, price) {
             selectedProduct = prodName;
@@ -692,9 +708,11 @@
             document.getElementById('payButton').innerText = price > 0 ? `Proceed to Payment (₹${price}) →` : `Get Free Report Instantly →`;
             document.getElementById('checkoutModal').style.display = 'flex';
         }
+
         function closeCheckoutModal() {
             document.getElementById('checkoutModal').style.display = 'none';
         }
+
         function proceedToPayment(event) {
             event.preventDefault();
             const name = document.getElementById('userName').value;
@@ -703,10 +721,12 @@
             const ampm = document.getElementById('userAmpm').value;
             const pob = document.getElementById('userPob').value;
             const phone = document.getElementById('userPhone').value;
+
             if(!name || !dob || !tob || !pob || !phone) {
                 alert('कृपया सभी डिटेल्स सही से भरें।');
                 return;
             }
+
             const orderId = 'ORD_' + Math.random().toString(36).substring(2, 8).toUpperCase();
             
             currentTempOrder = {
@@ -717,70 +737,130 @@
                 phone,
                 status: productPrice > 0 ? 'Payment Pending' : 'Free Report Generated'
             };
+
             closeCheckoutModal();
+
             if(productPrice > 0) {
                 document.getElementById('qrAmountText').innerText = `Amount to Pay: ₹${productPrice}`;
+                
                 const upiDeepLink = `upi://pay?pa=${MERCHANT_UPI}&pn=${encodeURIComponent(MERCHANT_NAME)}&am=${productPrice}&cu=INR&tn=${encodeURIComponent(selectedProduct + ' - ' + orderId)}`;
                 document.getElementById('upiAppButton').href = upiDeepLink;
-                document.getElementById('whatsappUpdateBtn').style.display = 'none';
+                document.getElementById('whatsappDetailBtn').style.display = 'none'; // भुगतान के बाद ही दिखेगा
+
                 document.getElementById('qrPaymentModal').style.display = 'flex';
             } else {
+                // Free Swarnima Janm Patrika case
+                currentTempOrder.status = 'Free Report Generated';
                 ordersList.push(currentTempOrder);
-                alert('आपकी फ्री रिपोर्ट बुक हो गई है! आपका बहुत-बहुत धन्यवाद। आपकी कुंडली 24 घंटे के अंदर आपके WhatsApp नंबर पर भेज दी जाएगी। जगाएं अपना भाग्य।');
+
+                // WhatsApp message to owner for free lead
+                const ownerMsg = `🔔 *NEW FREE REPORT LEAD!* 🔔\n\n*ID:* ${currentTempOrder.orderId}\n*Name:* ${name}\n*Phone:* ${phone}\n*Service:* Swarnima Janm Patrika (Free)\n*Birth Details:* ${currentTempOrder.details}`;
+                const encMsg = encodeURIComponent(ownerMsg);
+                const waLink = `https://api.whatsapp.com/send?phone=${OWNER_WHATSAPP}&text=${encMsg}`;
+
+                alert('आपकी स्वर्णिम जन्मपत्रिका बुक हो गई है! नीचे हरे बटन पर क्लिक करके स्वामी जी को WhatsApp पर डिटेल्स भेजें।');
+                
+                // Automatically redirect or let user click button
+                window.open(waLink, '_blank');
                 document.getElementById('orderForm').reset();
             }
         }
+
         function closeQrModal() {
             document.getElementById('qrPaymentModal').style.display = 'none';
         }
+
         function confirmOrderSuccess() {
             if(currentTempOrder) {
-                currentTempOrder.status = 'Payment Received / Assigned';
+                currentTempOrder.status = 'Payment Received & Confirmed';
                 ordersList.push(currentTempOrder);
-                const waMessage = `🙏 Namaste - ${currentTempOrder.name}\n\nAapka order #${currentTempOrder.orderId} — ${currentTempOrder.product} — successfully receive ho gaya hai. Or agle 24 hours ke andar apko delivery hojayegi\n\nAapki Kundli bilkul sahi bane, iske liye please apni birth details (date, time, birthplace) ek baar check kar lein.\n\nSahi janam vivaran, matlab sahi bhavishyavani 🌟\n\nDhanyavaad! 🌸`;
-                const encodedMsg = encodeURIComponent(waMessage);
-                const userPhoneNum = '91' + currentTempOrder.phone;
-                const waLink = `https://api.whatsapp.com/send?phone=${userPhoneNum}&text=${encodedMsg}`;
+
+                // WhatsApp Message Construction for Paid Product (Divya Bhagye Sutra, etc.)
+                const ownerMessage = `🌟 *NEW PAID ORDER RECEIVED!* 🌟\n\n*Order ID:* ${currentTempOrder.orderId}\n*Customer Name:* ${currentTempOrder.name}\n*Phone Number:* ${currentTempOrder.phone}\n*Product Purchased:* ${currentTempOrder.product}\n*Birth Details:* ${currentTempOrder.details}\n\nKripya inka chart jald hi banakar bhejein!`;
                 
-                const btn = document.getElementById('whatsappUpdateBtn');
-                btn.href = waLink;
-                btn.style.display = 'block';
-                alert('पेमेंट कन्फर्म हो गया है! अब नीचे हरे रंग के "WhatsApp पर अपडेट पाएं" बटन पर क्लिक करके कन्फर्मेशन भेज सकते हैं।');
+                const encodedMsg = encodeURIComponent(ownerMessage);
+                const ownerWaLink = `https://api.whatsapp.com/send?phone=${OWNER_WHATSAPP}&text=${encodedMsg}`;
+                
+                const detailBtn = document.getElementById('whatsappDetailBtn');
+                detailBtn.href = ownerWaLink;
+                detailBtn.style.display = 'block';
             }
+            
+            alert('धन्यवाद! पेमेंट कन्फर्म हो गई है और डेटा जिज्ञासु पटल में सेव हो गया है। अब नीचे हरे बटन पर क्लिक करके अपने WhatsApp पर आर्डर की डिटेल्स मंगवा लें।');
         }
+
         function openConsultationModal() {
+            document.getElementById('consultWhatsappDetailBtn').style.display = 'none';
             document.getElementById('consultationModal').style.display = 'flex';
         }
+
         function closeConsultationModal() {
             document.getElementById('consultationModal').style.display = 'none';
         }
+
         function bookConsultationSchedule(event) {
             event.preventDefault();
             const name = document.getElementById('consultName').value;
             const phone = document.getElementById('consultPhone').value;
-            alert(`धन्यवाद ${name}! आपकी फ्री कंसल्टेशन बुकिंग दर्ज हो गई है। हमारी टीम जल्द ही आपसे WhatsApp पर संपर्क करेगी।`);
-            document.getElementById('consultationModal').style.display = 'none';
-        }
-        function openAdminModal() {
-            const tbody = document.getElementById('adminTableBody');
-            tbody.innerHTML = '';
-            if(ordersList.length === 0) {
-                tbody.innerHTML = `<tr><td colspan="5" style="text-align: center; color: #888;">No submissions recorded yet.</td></tr>`;
-            } else {
-                ordersList.forEach(ord => {
-                    tbody.innerHTML += `<tr>
-                        <td><b>${ord.orderId}</b></td>
-                        <td>${ord.name}<br><small>${ord.phone}</small></td>
-                        <td>${ord.product}</td>
-                        <td><small>${ord.details}</small></td>
-                        <td><span style="color: #27ae60; font-weight: bold;">${ord.status}</span></td>
-                    </tr>`;
-                });
+
+            if(!name || !phone) {
+                alert('कृपया अपना नाम और WhatsApp नंबर दर्ज करें।');
+                return;
             }
+
+            const consultId = 'CONS_' + Math.random().toString(36).substring(2, 8).toUpperCase();
+            
+            const consultOrder = {
+                orderId: consultId,
+                name: name,
+                product: 'Consultation Booking',
+                details: 'Scheduled via Website',
+                phone: phone,
+                status: 'Consultation Requested'
+            };
+
+            ordersList.push(consultOrder);
+
+            // WhatsApp Message for Consultation Owner
+            const consultWaMessage = `📞 *NEW CONSULTATION BOOKING!* 📞\n\n*Booking ID:* ${consultId}\n*Client Name:* ${name}\n*Phone Number:* ${phone}\n*Service:* Consultation Booking (1st Free / ₹1999)\n\nKripya inase sampark karke samay (slot) tay karein! 🌟`;
+            
+            const encodedConsultMsg = encodeURIComponent(consultWaMessage);
+            const consultWaLink = `https://api.whatsapp.com/send?phone=${OWNER_WHATSAPP}&text=${encodedConsultMsg}`;
+            
+            const consultBtn = document.getElementById('consultWhatsappDetailBtn');
+            consultBtn.href = consultWaLink;
+            consultBtn.style.display = 'block';
+
+            alert(`बधाई हो ${name}! आपकी कंसल्टेशन बुकिंग दर्ज हो गई है। नीचे हरे बटन से स्वामी जी को WhatsApp पर डिटेल्स भेजें।`);
+        }
+
+        function openAdminModal() {
+            updateAdminTable();
             document.getElementById('adminModal').style.display = 'flex';
         }
+
         function closeAdminModal() {
             document.getElementById('adminModal').style.display = 'none';
+        }
+
+        function updateAdminTable() {
+            const tbody = document.getElementById('adminTableBody');
+            if(ordersList.length === 0) {
+                tbody.innerHTML = `<tr><td colspan="5" style="text-align: center; color: #888;">No submissions recorded yet.</td></tr>`;
+                return;
+            }
+            tbody.innerHTML = '';
+            ordersList.forEach(item => {
+                tbody.innerHTML += `
+                    <tr>
+                        <td><b>${item.orderId}</b></td>
+                        <td>${item.name}<br><small>${item.phone}</small></td>
+                        <td>${item.product}</td>
+                        <td><small>${item.details}</small></td>
+                        <td><span style="color: #27ae60; font-weight: 600;">${item.status}</span></td>
+                    </tr>
+                `;
+            });
         }
     </script>
 </body>
